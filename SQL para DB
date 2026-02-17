@@ -1,0 +1,60 @@
+--SQL para hacer la BD y las tablas
+Create database prueba;
+
+use prueba;
+
+create table usuarios(
+	id int primary key identity(1,1) not null,
+	nombre varchar(40),
+	apellido varchar(40),
+	edad int,
+	email varchar(40)
+);
+
+insert into usuarios(nombre, apellido, edad, email)
+values('Josue', 'Ataulluco', 22, 'josue@gmail.com'),
+	('Andres', 'Velasquez', 24, 'andres@gmail.com'),
+	('Pedro', 'Geraldo', 19, 'pedro@gmail.com')
+
+create procedure MostrarUsuarios
+as
+begin
+	select * from usuarios;
+end;
+
+create procedure Crear_Usuario
+@nombre as varchar(40),
+@apellido as varchar(40),
+@edad as int,
+@email as varchar(40)
+as
+begin
+	insert into usuarios(nombre, apellido, edad, email)
+	values(@nombre, @apellido, @edad, @email)
+end;
+
+create procedure Actualizar_Usuario
+@id as int,
+@nombre as varchar(40),
+@apellido as varchar(40),
+@edad as int,
+@email as varchar(40)
+as
+begin
+	update usuarios
+	set nombre = @nombre, apellido=@apellido, edad=@edad, email=@email
+	where id = @id
+end;
+
+create procedure Eliminar_Usuario
+@id as int
+as
+begin
+	delete from usuarios where id = @id
+end;
+
+
+exec Crear_Usuario 'David', 'Alcantara', 21, 'david@gmail.com';
+exec Actualizar_Usuario 1, 'Jojue', 'Alcantara', 22, 'jojue@gmail.com';
+exec Eliminar_Usuario 4;
+exec MostrarUsuarios;
