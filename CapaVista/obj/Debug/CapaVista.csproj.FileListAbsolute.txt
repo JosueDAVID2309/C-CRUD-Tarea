@@ -1,0 +1,14 @@
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CRUD_Simple.Capa_Vista.resources
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\bin\Debug\CapaVista.exe.config
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\bin\Debug\CapaVista.exe
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\bin\Debug\CRUD_Simple.dll
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\bin\Debug\CRUD_Simple.pdb
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.csproj.Up2Date
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.exe
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CapaVista\obj\Debug\CapaVista.exe.config

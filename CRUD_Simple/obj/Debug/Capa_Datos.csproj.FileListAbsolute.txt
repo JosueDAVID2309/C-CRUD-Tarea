@@ -1,0 +1,6 @@
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CRUD_Simple\bin\Debug\CRUD_Simple.dll
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CRUD_Simple\bin\Debug\CRUD_Simple.pdb
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CRUD_Simple\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CRUD_Simple\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CRUD_Simple\obj\Debug\CRUD_Simple.dll
+C:\Users\Alumno\Desktop\C# CRUD\CRUD_Simple\CRUD_Simple\obj\Debug\CRUD_Simple.pdb
