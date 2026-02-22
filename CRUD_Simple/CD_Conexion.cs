@@ -10,7 +10,7 @@ namespace Capa_Datos
 {
     public class CD_Conexion
     {
-        SqlConnection conexion = new SqlConnection("Data Source=8CGK1P111102A18;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;Application Name=\"SQL Server Management Studio\"; Database=prueba");
+        SqlConnection conexion = new SqlConnection("Data Source=localhost\\SQLEXPRESS; Initial Catalog=prueba; Integrated Security=True;  ");
 
         public SqlConnection AbrirConexion()
         {

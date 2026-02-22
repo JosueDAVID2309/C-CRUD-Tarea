@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridPrincipal = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.textBoxEdad = new System.Windows.Forms.TextBox();
@@ -38,56 +37,50 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxId = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonInsertar = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.labelOperacion = new System.Windows.Forms.Label();
+            this.buttonActualizar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridPrincipal
             // 
+            this.dataGridPrincipal.AllowUserToAddRows = false;
+            this.dataGridPrincipal.AllowUserToDeleteRows = false;
             this.dataGridPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridPrincipal.Location = new System.Drawing.Point(12, 12);
             this.dataGridPrincipal.Name = "dataGridPrincipal";
-            this.dataGridPrincipal.Size = new System.Drawing.Size(559, 347);
+            this.dataGridPrincipal.ReadOnly = true;
+            this.dataGridPrincipal.Size = new System.Drawing.Size(540, 300);
             this.dataGridPrincipal.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(861, 400);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Rellenar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(699, 13);
+            this.textBoxNombre.Location = new System.Drawing.Point(640, 64);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(220, 20);
             this.textBoxNombre.TabIndex = 2;
             // 
             // textBoxApellido
             // 
-            this.textBoxApellido.Location = new System.Drawing.Point(699, 58);
+            this.textBoxApellido.Location = new System.Drawing.Point(640, 109);
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(220, 20);
             this.textBoxApellido.TabIndex = 3;
             // 
             // textBoxEdad
             // 
-            this.textBoxEdad.Location = new System.Drawing.Point(699, 105);
+            this.textBoxEdad.Location = new System.Drawing.Point(640, 156);
             this.textBoxEdad.Name = "textBoxEdad";
             this.textBoxEdad.Size = new System.Drawing.Size(220, 20);
             this.textBoxEdad.TabIndex = 4;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(699, 158);
+            this.textBoxEmail.Location = new System.Drawing.Point(640, 209);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(220, 20);
             this.textBoxEmail.TabIndex = 5;
@@ -95,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(616, 16);
+            this.label1.Location = new System.Drawing.Point(590, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 6;
@@ -104,7 +97,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(616, 165);
+            this.label2.Location = new System.Drawing.Point(590, 212);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(32, 13);
@@ -114,7 +107,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(616, 112);
+            this.label3.Location = new System.Drawing.Point(590, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 8;
@@ -123,69 +116,85 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(616, 65);
+            this.label4.Location = new System.Drawing.Point(590, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Apellido";
             // 
-            // button2
+            // buttonInsertar
             // 
-            this.button2.Location = new System.Drawing.Point(829, 200);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 38);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Insertar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonInsertar.Location = new System.Drawing.Point(684, 331);
+            this.buttonInsertar.Name = "buttonInsertar";
+            this.buttonInsertar.Size = new System.Drawing.Size(176, 38);
+            this.buttonInsertar.TabIndex = 10;
+            this.buttonInsertar.Text = "Insertar";
+            this.buttonInsertar.UseVisualStyleBackColor = true;
+            this.buttonInsertar.Click += new System.EventHandler(this.buttonInsertar_Click);
             // 
-            // label5
+            // buttonEliminar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(616, 213);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(18, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "ID";
+            this.buttonEliminar.Location = new System.Drawing.Point(12, 333);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(90, 38);
+            this.buttonEliminar.TabIndex = 13;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
-            // textBoxId
+            // buttonEditar
             // 
-            this.textBoxId.Location = new System.Drawing.Point(699, 210);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(38, 20);
-            this.textBoxId.TabIndex = 12;
+            this.buttonEditar.Location = new System.Drawing.Point(171, 333);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(90, 38);
+            this.buttonEditar.TabIndex = 14;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
-            // button3
+            // labelOperacion
             // 
-            this.button3.Location = new System.Drawing.Point(619, 275);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 38);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.labelOperacion.AutoSize = true;
+            this.labelOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOperacion.Location = new System.Drawing.Point(558, 12);
+            this.labelOperacion.Name = "labelOperacion";
+            this.labelOperacion.Size = new System.Drawing.Size(325, 31);
+            this.labelOperacion.TabIndex = 15;
+            this.labelOperacion.Text = "Insertar Nuevo Registro";
             // 
-            // button4
+            // buttonActualizar
             // 
-            this.button4.Location = new System.Drawing.Point(733, 275);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 38);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Actualizar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonActualizar.Enabled = false;
+            this.buttonActualizar.Location = new System.Drawing.Point(684, 252);
+            this.buttonActualizar.Name = "buttonActualizar";
+            this.buttonActualizar.Size = new System.Drawing.Size(176, 37);
+            this.buttonActualizar.TabIndex = 16;
+            this.buttonActualizar.Text = "Actualizar";
+            this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Enabled = false;
+            this.buttonCancelar.Location = new System.Drawing.Point(445, 335);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(120, 35);
+            this.buttonCancelar.TabIndex = 17;
+            this.buttonCancelar.Text = "Cancelar Operación";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // Capa_Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBoxId);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(884, 381);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonActualizar);
+            this.Controls.Add(this.labelOperacion);
+            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.buttonEliminar);
+            this.Controls.Add(this.buttonInsertar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -194,10 +203,10 @@
             this.Controls.Add(this.textBoxEdad);
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridPrincipal);
             this.Name = "Capa_Vista";
             this.Text = "Capa_Vista";
+            this.Load += new System.EventHandler(this.Capa_Vista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -207,7 +216,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridPrincipal;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.TextBox textBoxEdad;
@@ -216,10 +224,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxId;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonInsertar;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonEditar;
+        private System.Windows.Forms.Label labelOperacion;
+        private System.Windows.Forms.Button buttonActualizar;
+        private System.Windows.Forms.Button buttonCancelar;
     }
 }
