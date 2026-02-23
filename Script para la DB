@@ -16,7 +16,7 @@ values('Josue', 'Ataulluco', 22, 'josue@gmail.com'),
 	('Andres', 'Velasquez', 24, 'andres@gmail.com'),
 	('Pedro', 'Geraldo', 19, 'pedro@gmail.com')
 
-alter procedure MostrarUsuarios
+create procedure MostrarUsuarios
 @nombre varchar(40) = NULL,
 @apellido varchar(40) = NULL,
 @edad int = NULL,
