@@ -16,10 +16,19 @@ values('Josue', 'Ataulluco', 22, 'josue@gmail.com'),
 	('Andres', 'Velasquez', 24, 'andres@gmail.com'),
 	('Pedro', 'Geraldo', 19, 'pedro@gmail.com')
 
-create procedure MostrarUsuarios
+alter procedure MostrarUsuarios
+@nombre varchar(40) = NULL,
+@apellido varchar(40) = NULL,
+@edad int = NULL,
+@email varchar(40) = NULL
 as
 begin
-	select * from usuarios;
+	select *
+	from usuarios
+	where (@nombre is null or nombre like '%'+@nombre+'%')
+	  and (@apellido is null or apellido like '%'+@apellido+'%')
+	  and (@edad is null or edad = @edad)
+	  and (@email is null or email like '%'+@email+'%');
 end;
 
 create procedure Crear_Usuario
