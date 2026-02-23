@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FE58D28-8179-4EBA-8E60-F1714EB73E16}|CapaVista\\CapaVista.csproj|C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\capavista\\capa_vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FE58D28-8179-4EBA-8E60-F1714EB73E16}|CapaVista\\CapaVista.csproj|c:\\users\\josue\\desktop\\c-crud-tarea\\capavista\\capa_vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FE58D28-8179-4EBA-8E60-F1714EB73E16}|CapaVista\\CapaVista.csproj|solutionrelative:capavista\\capa_vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FE58D28-8179-4EBA-8E60-F1714EB73E16}|CapaVista\\CapaVista.csproj|C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\capavista\\capa_vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4FE58D28-8179-4EBA-8E60-F1714EB73E16}|CapaVista\\CapaVista.csproj|solutionrelative:capavista\\capa_vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{917FA830-C359-4E2B-86D7-3BA6F577F217}|CRUD_Simple\\Capa_Datos.csproj|C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\crud_simple\\cd_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{917FA830-C359-4E2B-86D7-3BA6F577F217}|CRUD_Simple\\Capa_Datos.csproj|solutionrelative:crud_simple\\cd_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{917FA830-C359-4E2B-86D7-3BA6F577F217}|CRUD_Simple\\Capa_Datos.csproj|C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\crud_simple\\cd_conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{917FA830-C359-4E2B-86D7-3BA6F577F217}|CRUD_Simple\\Capa_Datos.csproj|solutionrelative:crud_simple\\cd_conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
@@ -34,15 +46,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CD_Datos.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\CRUD_Simple\\CD_Datos.cs",
+              "RelativeDocumentMoniker": "CRUD_Simple\\CD_Datos.cs",
+              "ToolTip": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\CRUD_Simple\\CD_Datos.cs",
+              "RelativeToolTip": "CRUD_Simple\\CD_Datos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T05:01:59.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Capa_Vista.cs",
               "DocumentMoniker": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\CapaVista\\Capa_Vista.cs",
               "RelativeDocumentMoniker": "CapaVista\\Capa_Vista.cs",
               "ToolTip": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\CapaVista\\Capa_Vista.cs",
               "RelativeToolTip": "CapaVista\\Capa_Vista.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwHkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAYwJAAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T14:47:30.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CD_Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\CRUD_Simple\\CD_Conexion.cs",
+              "RelativeDocumentMoniker": "CRUD_Simple\\CD_Conexion.cs",
+              "ToolTip": "C:\\Users\\Josue\\Desktop\\C-CRUD-Tarea\\CRUD_Simple\\CD_Conexion.cs",
+              "RelativeToolTip": "CRUD_Simple\\CD_Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T05:09:27.479Z",
               "EditorCaption": ""
             },
             {

@@ -16,7 +16,7 @@ values('Josue', 'Ataulluco', 22, 'josue@gmail.com'),
 	('Andres', 'Velasquez', 24, 'andres@gmail.com'),
 	('Pedro', 'Geraldo', 19, 'pedro@gmail.com')
 
-create procedure MostrarUsuarios
+alter procedure MostrarUsuarios
 @nombre varchar(40) = NULL,
 @apellido varchar(40) = NULL,
 @edad int = NULL,
@@ -66,4 +66,4 @@ end;
 exec Crear_Usuario 'David', 'Alcantara', 21, 'david@gmail.com';
 exec Actualizar_Usuario 1, 'Jojue', 'Alcantara', 22, 'jojue@gmail.com';
 exec Eliminar_Usuario 4;
-exec MostrarUsuarios;
+exec MostrarUsuarios @edad = 22 ;

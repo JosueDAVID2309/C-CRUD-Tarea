@@ -21,6 +21,19 @@ namespace CRUD_Simple
 
         CD_Datos dt = new CD_Datos();
 
+        private void CargarDatos(string Filtro = null, string FiltroText = "")
+        {
+            if (!string.IsNullOrEmpty(Filtro) && !string.IsNullOrEmpty(FiltroText))
+            {
+                dataGridPrincipal.DataSource = dt.MostrarUsuarios(Filtro, FiltroText);
+            }
+            else
+            {
+                dataGridPrincipal.DataSource = dt.MostrarUsuarios();
+            }
+                
+        }
+
         private void LimpiarTextBoxs()
         {
             textBoxNombre.Text = "";
@@ -44,14 +57,25 @@ namespace CRUD_Simple
 
         private void Capa_Vista_Load(object sender, EventArgs e)
         {
-            dataGridPrincipal.DataSource = dt.MostrarUsuarios();
+            CargarDatos();
             buttonActualizar.Visible = false;
             buttonCancelar.Visible = false;
+
+            toolStripComboBoxFiltro.Items.Add("Nombre");
+            toolStripComboBoxFiltro.Items.Add("Apellido");
+            toolStripComboBoxFiltro.Items.Add("Edad");
+            toolStripComboBoxFiltro.Items.Add("Email");
+            toolStripComboBoxFiltro.SelectedIndex = 0;
+            toolStripTextBoxFiltro.Enabled = false;
         }
 
         private void buttonInsertar_Click(object sender, EventArgs e)
         {
             dt.InsertarUsuario(textBoxNombre.Text, textBoxApellido.Text, Convert.ToInt32(textBoxEdad.Text), textBoxEmail.Text);
+            MessageBox.Show("Usuario insertado correctamente");
+
+            CargarDatos();
+            LimpiarTextBoxs();
         }
 
         private void buttonActualizar_Click(object sender, EventArgs e)
@@ -60,6 +84,7 @@ namespace CRUD_Simple
 
             dt.ActualizarUsuario(textBoxNombre.Text, textBoxApellido.Text, Convert.ToInt32(textBoxEdad.Text), textBoxEmail.Text, Convert.ToInt32(id));
             MessageBox.Show("Usuario actualizado correctamente");
+            CargarDatos();
             Restablecer();
         }
 
@@ -100,6 +125,7 @@ namespace CRUD_Simple
                 string id = dataGridPrincipal.CurrentRow.Cells["id"].Value.ToString();
                 dt.EliminarUsuario(Convert.ToInt32(id));
                 MessageBox.Show("Usuario eliminado correctamente");
+                CargarDatos();
             }
             else if(dataGridPrincipal.SelectedRows.Count > 1){ 
                 MessageBox.Show("Selecciona solo una fila para eliminar");
@@ -112,6 +138,16 @@ namespace CRUD_Simple
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             Restablecer();
+        }
+
+        private void toolStripTextBoxFiltro_TextChanged(object sender, EventArgs e)
+        {
+            CargarDatos(toolStripComboBoxFiltro.SelectedItem.ToString(), toolStripTextBoxFiltro.Text);
+        }
+
+        private void toolStripComboBoxFiltro_TextChanged(object sender, EventArgs e)
+        {
+            toolStripTextBoxFiltro.Enabled = true;
         }
     }
 
